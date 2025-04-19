@@ -1,0 +1,603 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    outline: none;
+    transition: .5s;
+    text-decoration: none;
+    font-family: Montserrat;
+}
+
+/* шрифты */
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-SemiBold.ttf);
+    font-weight: 600;
+}
+
+.lil{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 350px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.burger-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+}
+
+.burger-line {
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.active {
+    background-color: #3E2113;
+}
+
+.ques{
+    margin-bottom: 90px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+
+/* шрифты */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* header */
+header {
+    background-color: #3E2113;
+    padding: 20px 0px 20px;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+nav a {
+    font-size: 16px;
+    color: #E7E2DF;
+    font-weight: 400;
+}
+
+nav a:hover {
+    color: #BF8862;
+}
+
+.iconhead {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+/* header */
+
+/* login */
+.vect {
+    padding: 30px 0px 20px;
+}
+
+.vector {
+    width: 50px;
+    height: 50px;
+    background: url(../media/card/1.svg) no-repeat center;
+
+}
+
+.vector:hover {
+    background: url(../media/card/2.svg) no-repeat center;
+}
+
+.loginn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.login_left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: start;
+}
+
+h3 {
+    font-size: 32px;
+    font-weight: 500;
+    color: #3C2010;
+}
+
+h4 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #3C2010;
+}
+
+.loginn a {
+    font-size: 14px;
+    font-weight: 400;
+    color: #3C201061;
+    text-decoration: underline;
+}
+
+.loginn form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+    color: #3C2010;
+}
+
+.loginn input {
+    width: 550px;
+    height: 50px;
+    border: 1px solid #3C2010;
+    color: #3C2010;
+    border-radius: 20px;
+    font-size: 16px;
+    padding: 0px 10px 0px;
+}
+
+.loginn form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.headd {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.loginn button {
+    width: 256px;
+    height: 40px;
+    background-color: #3C2010;
+    border: 1px solid #3C2010;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 20px;
+}
+
+.loginn button:hover {
+    background-color: #ffffff;
+    border: 1px solid #3C2010;
+    color: #3C2010;
+}
+
+.for {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.fo {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.formm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formm label {
+    font-size: 14px;
+}
+
+input[type="checkbox"] {
+    accent-color: #3C2010;
+}
+
+.for input {
+    width: 15px;
+    cursor: pointer;
+}
+
+.for label {
+    color: #3C2010;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/* login */
+
+/* footer */
+.photo2{
+    display: none;
+}
+
+footer {
+    background-color: #3C2010;
+    padding: 30px 0px 30px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerone {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footerone a {
+    font-size: 14px;
+    color: #E7E2DF;
+    font-weight: 400;
+}
+
+.footerone a:hover {
+    color: #BF8862;
+}
+
+h5 {
+    font-size: 16px;
+    color: #E7E2DF;
+    font-weight: 400;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.lapki img {
+    height: 41px;
+}
+
+/* footer */
+
+@media screen and (max-width: 834px) {
+
+    /* header */
+    .container {
+        max-width: 774px;
+        margin: 0 auto;
+    }
+
+    nav {
+        gap: 30px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .iconhead {
+        gap: 20px;
+    }
+
+    /* header */
+
+    /* login */
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 12px;
+        font-weight: 400;
+        color: #3C2010;
+    }
+
+    .loginn a {
+        font-size: 12px;
+    }
+
+    .loginn input {
+        width: 400px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .loginn form {
+        gap: 15px;
+    }
+
+    .loginn button {
+        width: 256px;
+        height: 35px;
+        background-color: #3C2010;
+        border: 1px solid #3C2010;
+        color: #fff;
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+        padding: 5px 0px;
+        border-radius: 20px;
+    }
+
+    .for {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .fo {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .formm {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .formm label {
+        font-size: 14px;
+    }
+
+    input[type="checkbox"] {
+        accent-color: #3C2010;
+    }
+
+    .for input {
+        width: 15px;
+        cursor: pointer;
+    }
+
+    .for label {
+        color: #3C2010;
+        font-size: 12px;
+        font-weight: 400;
+        width: 400px;
+    }
+
+    /* login */
+
+
+    /* footer */
+    .photo1{
+        display: none;
+    }
+
+    .photo2{
+        display: block;
+    }
+
+    .footerone a {
+        font-size: 12px;
+    }
+
+    h5 {
+        font-size: 14px;
+    }
+
+    /* footer */
+
+}
+
+
+@media screen and (max-width: 390px) {
+    /* header */
+    .container{
+        max-width: 355px;
+        margin: 0 auto;
+    }
+    
+    
+    nav a{
+        font-size: 14px;
+    }
+    
+    .iconhead{
+        gap: 20px;  
+    }
+    /* header */
+
+    /* login */
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 12px;
+        font-weight: 400;
+        color: #3C2010;
+    }
+
+    .loginn a {
+        font-size: 12px;
+    }
+
+    .loginn input {
+        width: 350px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .loginn form {
+        gap: 15px;
+    }
+
+    .loginn button {
+        width: 350px;
+        height: 35px;
+        background-color: #3C2010;
+        border: 1px solid #3C2010;
+        color: #fff;
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+        padding: 5px 0px;
+        border-radius: 20px;
+    }
+
+    .for {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .fo {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .formm {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .formm label {
+        font-size: 14px;
+    }
+
+    input[type="checkbox"] {
+        accent-color: #3C2010;
+    }
+
+    .for input {
+        width: 15px;
+        cursor: pointer;
+    }
+
+    .for label {
+        color: #3C2010;
+        font-size: 9px;
+        font-weight: 400;
+        width: 300px;
+    }
+
+    /* login */
+
+    /* footer */
+    .photo1{
+        display: none;
+    }
+
+    .photo2{
+        display: none;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    
+    .footerone{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    
+    .footerone a{
+        font-size: 14px;
+        color: #E7E2DF;
+        font-weight: 400;
+    }
+    
+    h5{
+        font-size: 16px;
+        color: #E7E2DF;
+        font-weight: 500;
+    }
+    /* footer */
+
+    .lil{
+        align-items: center;
+        flex-direction: row-reverse;
+
+        gap: 50px;
+    }
+
+    .burger-btn {
+        display: flex;
+    }
+    
+    nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 70%;
+        max-width: 300px;
+        height: 100vh;
+        box-shadow: -5px 0 15px #3C2010;
+        flex-direction: column;
+        padding: 80px 20px 20px;
+        transition: right 0.3s ease;
+        z-index: 5;
+    }
+    
+    nav.active {
+        left: 0;
+    }
+    
+    .burger-btn.active .burger-line:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .burger-btn.active .burger-line:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .burger-btn.active .burger-line:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+}

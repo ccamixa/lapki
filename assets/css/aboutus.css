@@ -1,0 +1,423 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    transition: .5s;
+    font-family: Montserrat;
+}
+
+.container{
+    max-width: 1266px;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-SemiBold.ttf);
+    font-weight: 600;
+}
+
+
+.lil{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 350px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.burger-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+}
+
+.burger-line {
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.active {
+    background-color: #3E2113;
+}
+
+.ques{
+    margin-bottom: 90px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+
+
+header{
+    background-color: #3E2113;
+    padding: 20px 0px 20px;
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+nav a{
+    font-size: 16px;
+    color: #E7E2DF;
+    font-weight: 400;
+}
+
+nav a:hover{
+    color: #BF8862;
+}
+
+.iconhead{
+    display: flex;
+    align-items: center;
+    gap: 25px;  
+}
+
+.photo2{
+    display: none;
+}
+
+.photo1{
+    display: none;
+}
+
+h2{
+    font-weight: 600;
+    font-size: 32px;
+    color: #3E2113;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.aboutus{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 26px;
+    margin: 0px 10px 80px;
+}
+
+.kyrykylu{
+    width: 858px;
+    height: 306px;
+    border-radius: 20px;
+    background-color: #E7E2DF;
+}
+
+p{
+    font-weight: 500;
+    font-size: 20px;
+    color: #3E2113;
+    padding: 105px 130px 105px 50px;
+}
+
+h3{
+    font-weight: 500;
+    font-size: 48px;
+    color: #3E2113; 
+    position: relative;
+    top: -300px;
+    right: -785px;
+}
+
+/* footer */
+footer{
+    background-color: #3C2010;
+    padding: 30px 0px 30px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerone{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footerone a{
+    font-size: 14px;
+    color: #E7E2DF;
+    font-weight: 400;
+}
+
+.footerone a:hover{
+    color: #BF8862;
+}
+
+h5{
+    font-size: 16px;
+    color: #E7E2DF;
+    font-weight: 400;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.lapki img{
+    height: 41px;
+}
+
+/* footer */
+
+@media screen and (max-width: 834px) {
+    .container{
+        max-width: 774px;
+        margin: 0 auto;
+    }
+
+    nav{
+        gap: 30px;
+    }
+    
+    nav a{
+        font-size: 14px;
+    }
+    
+    .iconhead{
+        gap: 20px;  
+    }
+
+    h2{
+        font-weight: 600;
+        font-size: 32px;
+        color: #3E2113;
+        text-align: center;
+        padding: 30px 0px;
+    }
+
+    .photo{
+        display: none;
+    }
+
+    .photo1{
+        display: block;
+    }
+
+    .photo2{
+        display: none;
+    }
+    
+    .aboutus{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 0px 10px 80px;
+    }
+    
+    .kyrykylu{
+        width: 535px;
+        height: 177px;
+        border-radius: 20px;
+        background-color: #E7E2DF;
+    }
+    
+    p{
+        font-weight: 500;
+        font-size: 16px;
+        color: #3E2113;
+        padding: 30px 100px 30px 50px;
+    }
+    
+    h3{
+        font-weight: 500;
+        font-size: 32px;
+        color: #3E2113; 
+        position: relative;
+        top: -167px;
+        right: -480px;
+    }
+    
+    /* footer */
+    .footerone a{
+        font-size: 12px;
+    }
+    
+    h5{
+        font-size: 14px;
+    }
+    /* footer */
+    
+}
+
+@media screen and (max-width: 390px) {
+    .container{
+        max-width: 355px;
+        margin: 0 auto;
+    }
+    
+    
+    nav a{
+        font-size: 14px;
+    }
+    
+    .iconhead{
+        gap: 20px;  
+    }
+
+    .photo{
+        display: none;
+    }
+
+    .photo1{
+        display: none;
+    }
+
+    h2{
+        font-weight: 600;
+        font-size: 32px;
+        color: #3E2113;
+        text-align: center;
+        padding: 30px 0px;
+    }
+
+    .photo2{
+        display: block;
+    }
+    
+    .aboutus{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 0px 10px 80px;
+    }
+    
+    .kyrykylu{
+        width: 535px;
+        height: 260px;
+        border-radius: 20px;
+        background-color: #E7E2DF;
+    }
+    
+    p{
+        font-weight: 500;
+        font-size: 16px;
+        color: #3E2113;
+        padding: 25px 65px 25px 40px;
+    }
+    
+    h3{
+        font-weight: 500;
+        font-size: 32px;
+        color: #3E2113; 
+        position: relative;
+        top: -230px;
+        right: -285px;
+    }
+
+     /* footer */
+     .footer{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    
+    .footerone{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    
+    .footerone a{
+        font-size: 14px;
+        color: #E7E2DF;
+        font-weight: 400;
+    }
+    
+    h5{
+        font-size: 16px;
+        color: #E7E2DF;
+        font-weight: 500;
+    }
+    /* footer */
+
+    .lil{
+        align-items: center;
+        flex-direction: row-reverse;
+
+        gap: 50px;
+    }
+
+    .burger-btn {
+        display: flex;
+    }
+    
+    nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 70%;
+        max-width: 300px;
+        height: 100vh;
+        box-shadow: -5px 0 15px #3C2010;
+        flex-direction: column;
+        padding: 80px 20px 20px;
+        transition: right 0.3s ease;
+        z-index: 5;
+    }
+    
+    nav.active {
+        left: 0;
+    }
+    
+    .burger-btn.active .burger-line:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .burger-btn.active .burger-line:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .burger-btn.active .burger-line:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+}
